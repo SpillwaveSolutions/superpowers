@@ -77,6 +77,116 @@ Fetch and follow instructions from https://raw.githubusercontent.com/obra/superp
 
 **Detailed docs:** [docs/README.opencode.md](docs/README.opencode.md)
 
+
+## Installing with Skilz (Universal Installer)
+
+The recommended way to install this skill across different AI coding agents is using the **skilz** universal installer.
+
+### Install Skilz
+
+```bash
+pip install skilz
+```
+
+This skill supports [Agent Skill Standard](https://agentskills.io/) which means it supports 14 plus coding agents including Claude Code, OpenAI Codex, Cursor and Gemini.
+
+
+### Git URL Options
+
+You can use either `-g` or `--git` with HTTPS or SSH URLs:
+
+```bash
+# HTTPS URL
+skilz install -g https://github.com/obra/superpowers
+
+# SSH URL
+skilz install --git git@github.com:obra/superpowers.git
+```
+
+### Claude Code
+
+Install to user home (available in all projects):
+```bash
+skilz install -g https://github.com/obra/superpowers
+```
+
+Install to current project only:
+```bash
+skilz install -g https://github.com/obra/superpowers --project
+```
+
+### OpenCode
+
+Install for [OpenCode](https://opencode.ai):
+```bash
+skilz install -g https://github.com/obra/superpowers --agent opencode
+```
+
+Project-level install:
+```bash
+skilz install -g https://github.com/obra/superpowers --project --agent opencode
+```
+
+### Gemini
+
+Project-level install for Gemini:
+```bash
+skilz install -g https://github.com/obra/superpowers --agent gemini
+```
+
+### OpenAI Codex
+
+Install for OpenAI Codex:
+```bash
+skilz install -g https://github.com/obra/superpowers --agent codex
+```
+
+Project-level install:
+```bash
+skilz install -g https://github.com/obra/superpowers --project --agent codex
+```
+
+
+### Install from Skillzwave Marketplace
+```
+# Claude to user home dir ~/.claude/skills
+skilz install obra_superpowers/skills__dispatching-parallel-agents
+
+# Claude skill in project folder ./claude/skills
+skilz install obra_superpowers/skills__dispatching-parallel-agents --project
+
+# OpenCode install to user home dir ~/.config/opencode/skills
+skilz install obra_superpowers/skills__dispatching-parallel-agents --agent opencode
+
+# OpenCode project level
+skilz install obra_superpowers/skills__dispatching-parallel-agents --agent opencode --project
+
+# OpenAI Codex install to user home dir ~/.codex/skills
+skilz install obra_superpowers/skills__dispatching-parallel-agents
+
+# OpenAI Codex project level ./.codex/skills
+skilz install obra_superpowers/skills__dispatching-parallel-agents --agent opencode --project
+
+
+# Gemini CLI (project level) -- only works with project level
+skilz install obra_superpowers/skills__dispatching-parallel-agents --agent gemini
+
+```
+
+See this site [skill Listing](https://skillzwave.ai/skill/obra__superpowers__skills__dispatching-parallel-agents__SKILL/) to see how to install this exact skill to 14+ different coding agents.
+
+
+### Other Supported Agents
+
+Skilz supports 14+ coding agents including Claude Code, OpenAI Codex, OpenCode, Cursor, Gemini CLI, GitHub Copilot CLI, Windsurf, Qwen Code, Aidr, and more.
+
+For the full list of supported platforms, visit [SkillzWave.ai/platforms](https://skillzwave.ai/platforms/) or see the [skilz-cli GitHub repository](https://github.com/SpillwaveSolutions/skilz-cli)
+
+
+<a href="https://skillzwave.ai/">Largest Agentic Marketplace for AI Agent Skills</a> and
+<a href="https://spillwave.com/">SpillWave: Leaders in AI Agent Development.</a>
+
+
 ## The Basic Workflow
 
 1. **brainstorming** - Activates before writing code. Refines rough ideas through questions, explores alternatives, presents design in sections for validation. Saves design document.
